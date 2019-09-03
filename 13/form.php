@@ -24,7 +24,7 @@ if($_POST)
 }
 ?>
 <form method="post" action="form.php">
- Введите мейл или ник: <input type="text" name="name" /><br />
+Имя: <input type="text" name="name" /><br />
  Ник: <input type="text" name="user" /><br />
  мейл: <input type="text" name="mail" /><br />
  Пароль: <input type="password" name="pass" /><br />
