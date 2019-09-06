@@ -3,17 +3,15 @@ if ($_POST['name'] == null)
 {
 	echo 'Укажите имя!';
 } else {    
-	if ($_COOKIE['name'] == null)
-	{ 	
 	// если нет, то счетчик 0 и создаем куки
-	$name = $_POST['name'];	
-	setcookie("names", $name, 0x6FFFFFFF);			
+	if (!isset($_COOKIE['name'])) { 	
+		$name = $_POST['name'];	
+		setcookie("names", $name, 0x6FFFFFFF);			
 	}
 }   
  
 
-if ($_COOKIE['count']) 
-{ 	// проверяем есть ли куки 
+if ($_COOKIE['count']) { 	// проверяем есть ли куки 
 	$cnt = $_COOKIE['count']+1; // если да, то +1 к счетчику
 } else {
 	// если нет, то счетчик 0 и создаем куки
@@ -27,7 +25,3 @@ if ($_COOKIE['count'])
   Ваше имя: <input type = "text" value = "<?php echo $_COOKIE['names']; ?>" name = "name" ><br>
   <input type="submit" value="Отправить">
  </form> 
-
-
-
- 
