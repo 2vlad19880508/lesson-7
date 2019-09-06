@@ -1,17 +1,18 @@
 <?php	
-if ($_POST['name'] == null) 
-{
-	echo 'Укажите имя!';
+if ($_POST['name'] == null) {
+    echo 'Укажите имя!';
 } else {    
 	// если нет, то счетчик 0 и создаем куки
-	if (!isset($_COOKIE['name'])) { 	
+	if (!isset($_COOKIE['name'])) {		
 		$name = $_POST['name'];	
 		setcookie("names", $name, 0x6FFFFFFF);			
 	}
-}   
- 
+}
+    
 
-if ($_COOKIE['count']) { 	// проверяем есть ли куки 
+
+if (isset($_COOKIE['count'])) 
+{ 	// проверяем есть ли куки 
 	$cnt = $_COOKIE['count']+1; // если да, то +1 к счетчику
 } else {
 	// если нет, то счетчик 0 и создаем куки
