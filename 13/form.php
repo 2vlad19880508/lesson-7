@@ -17,9 +17,9 @@ if ($_POST['name'] == null) {
 }
 ?>
 <form method="post" action="form.php">
-Имя: <input type="text" name="name" /><br />
- Ник: <input type="text" name="user" /><br />
- мейл: <input type="text" name="mail" /><br />
- Пароль: <input type="password" name="pass" /><br />
- <input type="submit" name="submit" value="Войти" />
+	Имя: <input type="text" name="name" /><br />
+	Ник: <input type="text" name="user" /><br />
+	мейл: <input type="text" name="mail" /><br />
+	Пароль: <input type="password" name="pass" /><br />
+	<input type="submit" name="submit" value="Войти" />
 </form>
