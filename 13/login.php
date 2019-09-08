@@ -11,7 +11,7 @@ if($_POST['submit']){
 }
 
 ?>
-<form method="post">
+<form method="post" action="login.php">
  Введите мейл или ник: <input type="text" name="user" /><br />
  Пароль: <input type="password" name="pass" /><br />
  <input type="submit" name="submit" value="Войти" />
