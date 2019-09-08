@@ -19,13 +19,14 @@ if ($_POST['name'] == null) {
 	$_SESSION['mail'] = $_POST['mail'];
 	$_SESSION['pass'] = $_POST['pass'];
 	$_SESSION['name'] = $_POST['name']; ?>
-<meta http-equiv="refresh" content="0; url=login.php">
+	<meta http-equiv="refresh" content="0; url=login.php">
 <?php } ?>
+
 <h3>Изменить данные</h3>
 <form method="post" action="profile.php">
- Имя: <input type="text" name="name" /><br />
- Ник: <input type="text" name="user" /><br />
- мейл: <input type="text" name="mail" /><br />
- Пароль: <input type="password" name="pass" /><br />
- <input type="submit" name="submit" value="изменить" />
+	Имя: <input type="text" name="name" /><br />
+	Ник: <input type="text" name="user" /><br />
+	мейл: <input type="text" name="mail" /><br />
+	Пароль: <input type="password" name="pass" /><br />
+	<input type="submit" name="submit" value="изменить" />
 </form>
